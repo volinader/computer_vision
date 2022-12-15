@@ -213,7 +213,7 @@ def downscale_image(im, max_dim=2048):
     return scale, new_im
 
 
-def crop_morphology(path):
+def crop_morphology(path, i):
     orig_im = Image.open(path)
     
     scale, im = downscale_image(orig_im)
